@@ -1,23 +1,23 @@
-body{
+body {
     background-image: url(../resource/registration-Back.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
     color: gold;
-    font-family: Bahnschrift, Tahoma, serif;
+    font-family: Georgia, Tahoma, serif;
     font-size: 16px;
     text-shadow: black 1px 0 4px;
 }
 
-header{
-    top:0;
+header {
+    top: 0;
     position: -webkit-sticky;
     position: sticky;
     height: 4em;
 }
 
-#embl{
+#embl {
     width: 50px;
     height: 50px;
     margin-left: 5%;
@@ -25,11 +25,12 @@ header{
     display: inline-block;
     border-radius: 10px;
 }
-.ourPlane{
+
+.ourPlane {
     font-size: 50px;
 }
 
-#jR, #logout{
+#jR, #logout {
     margin: 1%;
     display: inline-block;
     font-size: 1.8em;
@@ -37,13 +38,20 @@ header{
     text-decoration: none;
     float: right;
 }
-article{
+
+article {
     display: block;
     width: 400px;
     text-align: center;
     position: center;
     margin: 9% auto;
+    letter-spacing: 2px;
+    font-size: 20px;
 
+}
+
+.registration_header {
+    margin-top: -22px;
 }
 
 .registration_block {
@@ -53,18 +61,42 @@ article{
     padding: 30px;
     text-align: center;
     height: 350px;
-
 }
 
-.registration_field  *{
+.registration_field input {
     height: 28px;
     border-radius: 5px;
     margin-bottom: 8px;
     opacity: 0.9;
-}
-#region{
+    font-family: Georgia, serif;
     width: 160px;
-    border: 2px;
+    font-size: 15px;
+}
+
+#region {
+    height: 35px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    opacity: 0.9;
+    font-family: Georgia, serif;
+    width: 170px;
+    border: 2px solid black;
+}
+
+#registration {
+    margin-top: 10px;
+    background-color: gold;
+    font-size: 18px;
+    height: 33px;
+    border-radius: 8px;
+    font-family: Georgia, serif;
+}
+
+
+#registration:hover {
+    background-color: darkgray;
+    color: gold;
+    text-shadow: black 1px 0 4px;
 }
 
 

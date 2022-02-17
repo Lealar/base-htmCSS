@@ -15,18 +15,21 @@
 <article>
     <div class="registration_block">
         <div class="registration_header">
-            <h1>Registration form</h1>
+            <h1>Registration form:</h1>
         </div>
         <div class="registration_field">
             <form>
-                <label for="login"></label><input type="text" id="login" name="Login" placeholder="Login" autocomplete="on" autofocus><br>
-                <label for="firstname"></label><input type="text" id="firstname" name="Firstname" placeholder="First name" autocomplete="on" ><br>
-                <label for="lastname"></label><input type="text" id="lastname" name="Lastname" placeholder="Last name" autocomplete="on" ><br>
+                <label for="login"></label><input type="text" id="login" name="Login" placeholder="Login"
+                                                  autocomplete="on" autofocus><br>
+                <label for="firstname"></label><input type="text" id="firstname" name="Firstname"
+                                                      placeholder="First name" autocomplete="on"><br>
+                <label for="lastname"></label><input type="text" id="lastname" name="Lastname" placeholder="Last name"
+                                                     autocomplete="on"><br>
                 <label>
                     <select name="Choose country" id="region">
                         <optgroup label="Region">
                             <option label="Choose country"></option>
-                            <option  value="r1">USA</option>
+                            <option value="r1">USA</option>
                             <option value="r2">Canada</option>
                             <option value="r3">Europe</option>
                             <option value="r4">Russia</option>
@@ -34,8 +37,12 @@
                         </optgroup>
                     </select>
                 </label><br>
-                <label for="password"></label><input type="password" id="password" name="Password" placeholder="Password" autocomplete="on" onchange="regexpPassword()" ><br>
-                <label for="repeat-password"></label><input type="password" id="repeat-password" name="Repeat Password" placeholder="Repeat Password" autocomplete="on" onchange="passwordValidation()"><br>
+                <label for="password"></label><input type="password" id="password" name="Password"
+                                                     placeholder="Password" autocomplete="on"
+                                                     onchange="regexpPassword()"><br>
+                <label for="repeat-password"></label><input type="password" id="repeat-password" name="Repeat Password"
+                                                            placeholder="Repeat Password" autocomplete="on"
+                                                            onchange="passwordValidation()"><br>
                 <input type="submit" id="registration" value="Registration" onclick="return validation()">
             </form>
         </div>

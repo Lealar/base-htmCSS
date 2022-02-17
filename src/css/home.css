@@ -1,26 +1,28 @@
-body{
+body {
     background-image: url(../resource/background_home.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
     background-attachment: fixed;
     color: #29B0D9;
-    font-family: Bahnschrift, Tahoma, serif;
+    font-family: Georgia, Tahoma, serif;
     font-size: 16px;
     text-shadow: black 1px 0 4px;
 }
 
-header{
-    top:0;
+header {
+    top: 0;
     position: -webkit-sticky;
     position: sticky;
     height: 4em;
 }
-article{
+
+article {
     display: block;
     text-align: center;
 }
-#embl{
+
+#embl {
     width: 50px;
     height: 50px;
     margin-left: 5%;
@@ -28,11 +30,12 @@ article{
     display: inline-block;
     border-radius: 10px;
 }
-.ourPlane{
+
+.ourPlane {
     font-size: 50px;
 }
 
-#jR, #logout{
+#jR, #logout {
     margin: 1%;
     display: inline-block;
     font-size: 1.8em;
@@ -41,19 +44,20 @@ article{
     float: right;
 }
 
-.plane-item{
+.plane-item {
     display: inline-block;
     margin-right: 10em;
     width: 500px;
     height: 300px;
 }
-.plane-catalog{
+
+.plane-catalog {
     width: 100%;
     padding-bottom: 30px;
     padding-top: 15px;
 }
 
-.plane-block{
+.plane-block {
     margin-top: 90px;
     margin-left: 10%;
     margin-right: 10%;
@@ -62,11 +66,11 @@ article{
 
 }
 
-.plane-block > h1{
+.plane-block > h1 {
     font-size: 3em;
 }
 
-.plane-item > a{
+.plane-item > a {
     font-size: 2em;
     text-decoration: none;
 }
@@ -75,11 +79,11 @@ body.lock {
     overflow: hidden;
 }
 
-.popup{
+.popup {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     opacity: 0;
@@ -89,11 +93,13 @@ body.lock {
     transition: all 0.8s ease 0s;
     text-shadow: none;
 }
+
 .popup:target {
     opacity: 1;
     visibility: visible;
 }
-.popup_body{
+
+.popup_body {
     min-height: 100%;
     display: flex;
     align-items: center;
@@ -101,7 +107,8 @@ body.lock {
     padding: 30px 10px;
     transition: all 0.8s ease 0s;
 }
-.popup_content{
+
+.popup_content {
     background-color: orange;
     border-radius: 20px;
     color: black;
@@ -112,7 +119,8 @@ body.lock {
     opacity: 0;
     transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 }
-.popup_close{
+
+.popup_close {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -120,24 +128,26 @@ body.lock {
     color: black;
     text-decoration: none;
 }
-.popup_title{
+
+.popup_title {
     font-size: 40px;
     margin: 0 0 1em 0;
 }
 
-.popup:target .popup_content{
-    transform:  perspective(600px) translate(0px, 0%) rotateX(0deg);
+.popup:target .popup_content {
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
     opacity: 1;
 }
 
-.popup_area{
+.popup_area {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
 }
-.popup_column_right{
+
+.popup_column_right {
     height: 100%;
     margin-left: 53%;
     overflow: auto;
@@ -145,28 +155,27 @@ body.lock {
 }
 
 
-.popup_column_left{
+.popup_column_left {
     float: left;
     width: 50%;
     height: 100%;
     overflow: auto;
 }
 
-.popup_row{
+.popup_row {
     clear: both;
-    position:relative
+    position: relative
 }
-.popup_image{
+
+.popup_image {
     width: 100%;
     border-radius: 10px;
 }
 
-#popup_submit_button{
+#popup_submit_button {
     margin-top: 20px;
     height: 50px;
     font-size: 16px;
     box-shadow: 4px 4px;
     border-radius: 10px;
-
-
 }
