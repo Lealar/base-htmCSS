@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="css/registration.css">
+</head>
+<body>
+
+<header id="header">
+    <a href="login.html"><img id="embl" src="resource/emblem.jpg" alt="embl"></a>
+    <a href="login.html" id="logout">Logout</a>
+    <a href="home.html" id="jR">jetRent</a>
+</header>
+<article>
+    <div class="registration_block">
+        <div class="registration_header">
+            <h1>Registration form</h1>
+        </div>
+        <div class="registration_field">
+            <form>
+                <label for="login"></label><input type="text" id="login" name="login" placeholder="Login" autocomplete="on" autofocus><br>
+                <label for="firstname"></label><input type="text" id="firstname" name="firstname" placeholder="First name" autocomplete="on" ><br>
+                <label for="lastname"></label><input type="text" id="lastname" name="lastname" placeholder="Last name" autocomplete="on" ><br>
+                <label>
+                    <select name="region" id="region">
+                        <optgroup label="Region">
+                            <option value="r0">Choose country</option>
+                            <option value="r1">USA</option>
+                            <option value="r2">Canada</option>
+                            <option value="r3">Europe</option>
+                            <option value="r4">Russia</option>
+                            <option value="r5">China</option>
+                        </optgroup>
+                    </select>
+                </label><br>
+                <label for="password"></label><input type="password" id="password" name="password" placeholder="Password" autocomplete="on" ><br>
+                <label for="repeat-password"></label><input type="password" id="repeat-password" name="repeat-password" placeholder="Repeat Password" autocomplete="on"><br>
+                <input type="submit" id="registration" value="Registration">
+            </form>
+        </div>
+    </div>
+</article>
+</body>
+</html>
